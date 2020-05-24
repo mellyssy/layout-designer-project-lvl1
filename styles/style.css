@@ -3,3 +3,42 @@
   font-size: 16px;
   color: #303846;
 }
+
+.body {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.header {
+  font-weight: bold;
+  padding: 20px 50px;
+  background-color: #fff;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+
+  margin-left: auto;
+}
+
+.nav-list-item {
+  margin-left: 20px;
+}
+
+.header-logo {
+  height: 50px;
+}
+
+.nav-logo {
+  text-decoration: none;
+  align-items: center;
+}
+
+.nav-logo-text {
+  padding-left: 10px;
+}
