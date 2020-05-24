@@ -1,12 +1,10 @@
-* {
+.body {
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  
   font-family: sans-serif;
   font-size: 16px;
   color: #303846;
-}
-
-.body {
-  margin: 0 auto;
-  max-width: 1200px;
 }
 
 .d-flex {
@@ -41,4 +39,42 @@
 
 .nav-logo-text {
   padding-left: 10px;
+}
+
+.hero-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 404px;
+  padding: 20px;
+  
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+
+  color: #fff;
+}
+
+.hero-logo {
+  height: 200px;
+}
+
+.hero-header {
+  margin-bottom: 0;
+  font-size: 2em;
+}
+
+.hero-text {
+  margin: 5px 0 0;
+}
+
+.hero-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: none;
+  font: inherit;
+  color: #fff;
+  font-weight: bold;
 }
