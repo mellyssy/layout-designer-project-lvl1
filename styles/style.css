@@ -4,7 +4,13 @@
   
   font-family: sans-serif;
   font-size: 16px;
+  line-height: 1.5em;
   color: #303846;
+}
+
+a, a:visited {
+  color: #303846;
+  text-decoration: none;
 }
 
 .d-flex {
@@ -17,10 +23,12 @@
   background-color: #fff;
 }
 
-.nav-list {
+.list-clear {
   list-style: none;
   padding: 0;
+}
 
+.nav-list {
   margin-left: auto;
 }
 
@@ -77,4 +85,45 @@
   font: inherit;
   color: #fff;
   font-weight: bold;
+}
+
+.w-1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mr-100 {
+  margin-right: 100px;
+}
+
+.fs-175em {
+  font-size: 1.75em;
+}
+
+.advantages-list {
+  justify-content: space-between;
+}
+
+.advantages-list-item {
+  width: 30%;
+}
+
+.about {
+  background-color: #f7f7f7;
+}
+
+.content-img {
+  height: 250px;
+}
+
+.about-container {
+  justify-content: center;
+}
+
+.about-text {
+  max-width: 520px;
 }
