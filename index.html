@@ -23,7 +23,7 @@
       <img class="hero-logo" src="images/logo.svg" alt="логотип ЖК «Лунное море»">
       <h1 class="hero-header">ЖК «Лунное море»</h1>
       <p class="hero-text">Место, откуда не хочется улетать</p>
-      <button class='hero-button'>Забронировать</button>
+      <a class='hero-button' href="#booking">Забронировать</a>
     </section>
     <section class="advantages w-1000 mb-50" id="advantages-block">
       <ul class="advantages-list list-clear d-flex">
@@ -41,7 +41,7 @@
         </li>
       </ul>
     </section>
-    <section class="about mb-50" id="about-block">
+    <section class="p-50 mb-50 bg-c-f7" id="about-block">
       <div class="about-container w-1000 d-flex">
         <div class="about-text mr-100">
           <h2 class="fs-175em">О ЖК «Лунное море»</h2>
@@ -59,7 +59,45 @@
         <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
       </div>
     </section>
-    <section class="places"></section>
+    <section id="booking" class="booking bg-c-f7 p-50">
+      <form class="w-450 d-flex form-container"> 
+        <h2 class="fs-175em mb-30">Оставьте заявку сегодня!</h2>
+        <fieldset class="booking-fieldset d-flex mb-20">
+          <legend class="c-turquoise booking-fieldset-legend">Параметры квартиры</legend>
+          <label class="d-flex booking-label">
+            <span class="booking-label-text">Количество комнат:</span> 
+            <select class="booking-input" name="rooms">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <span class="booking-arrow"></span>
+          </label>
+          <label class="d-flex booking-label">
+            <span class="booking-label-text">Отделка:</span> 
+            <select class="booking-input" name="interior">
+              <option value="no-interior">Без отделки</option>
+              <option value="with-interior">С отделкой</option>
+              <option value="a-bit">Немного отделки</option>
+            </select>
+            <span class="booking-arrow"></span>
+          </label>
+        </fieldset>
+        <fieldset class="booking-fieldset mb-20">
+          <legend class="c-turquoise booking-fieldset-legend">Контактная информация</legend>
+            <label class="d-flex booking-label"><span class="booking-label-text">Имя:</span>
+              <input class="booking-input" type="text" name="name">
+            </label>
+            <label class="d-flex booking-label"><span class="booking-label-text">Телефон:</span>
+              <input class="booking-input" type="tel" name="phone">
+            </label> 
+            <label class="d-flex booking-label"><span class="booking-label-text">E-mail:</span>
+              <input class="booking-input" type="email" name="email">
+            </label>
+        </fieldset>
+        <button class="booking-btn c-turquoise">Отправить</button>
+      </form>
+    </section>
   </main>
   <footer>Это подвал</footer>
 </body>
