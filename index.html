@@ -13,36 +13,36 @@
     <nav class="d-flex">
       <a class="td-none ai-center"><img class="logo" src="images/logo.svg" alt="логотип ЖК «Лунное море»">Лунное море</a>
       <ul class="ml-auto d-flex list-clear">
-        <li class="ml-20px"><a href="#advantages-block">Преимущества</a></li>
-        <li class="ml-20px"><a href="#about-block">О ЖК</a></li>
-        <li class="ml-20px"><a href="#places-block">Места для отдыха</a></li>
+        <li class="ml-20px"><a href="#advantages">Преимущества</a></li>
+        <li class="ml-20px"><a href="#about">О ЖК</a></li>
+        <li class="ml-20px"><a href="#places">Места для отдыха</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="hero-container d-flex jc-center fd-column ai-center mb-50 c-white p-20px">
+  <main class="mt-100px">
+    <section class="hero-container d-flex jc-center fd-column ai-center c-white p-20px">
       <img class="h-200px" src="images/logo.svg" alt="логотип ЖК «Лунное море»">
-      <h1 class="hero-header">ЖК «Лунное море»</h1>
-      <p class="hero-text">Место, откуда не хочется улетать</p>
-      <a class="hero-button b-none c-pointer c-white fw-bold br-5px" href="#booking">Забронировать</a>
+      <h1 class="mb-0 fs-2em">ЖК «Лунное море»</h1>
+      <p class="m-5px00">Место, откуда не хочется улетать</p>
+      <a class="btn mt-10px b-none c-pointer c-white fw-bold br-5px" href="#booking">Забронировать</a>
     </section>
-    <section class="advantages w-1000 m-0-auto mb-50 scmt-100px" id="advantages-block">
-      <ul class="jc-spacebetween list-clear d-flex">
-        <li class="w-30percent">
+    <section class="p-50 scmt-100px" id="advantages">
+      <div class="jc-spacebetween m-0-auto w-1000 list-clear d-flex">
+        <div class="w-30percent">
           <h2 class="fs-175em">Уникальный вид</h2>
           <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
-        </li>
-        <li class="w-30percent">
+        </div>
+        <div class="w-30percent">
           <h2 class="fs-175em">Инфраструктура</h2>
           <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
-        </li>
-        <li class="w-30percent">
+        </div>
+        <div class="w-30percent">
           <h2 class="fs-175em">Близость к Москве</h2>
           <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
-    <section class="p-50 mb-50 bg-c-f7 scmt-100px" id="about-block">
+    <section class="p-50 bg-c-f7 scmt-100px" id="about">
       <div class="jc-center w-1000 m-0-auto d-flex">
         <div class="mw-520px mr-100">
           <h2 class="fs-175em">О ЖК «Лунное море»</h2>
@@ -52,12 +52,14 @@
         <img class="h-250px" src="images/moon-1.jpg" alt="Луна, спутник Земли">
       </div>
     </section>
-    <section class="places w-1000 m-0-auto d-flex mb-50 scmt-100px" id="places-block">
-      <img class="h-250px mr-100" src="images/moon-2.jpg" alt="Космонавт на Луне">
-      <div class="places-text">
-        <h2 class="fs-175em">Места для отдыха</h2>
-        <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
-        <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+    <section id="places" class="scmt-100px">
+      <div class="w-1000 m-0-auto d-flex p-50">
+        <img class="h-250px mr-100" src="images/moon-2.jpg" alt="Космонавт на Луне">
+        <div class="places-text">
+          <h2 class="fs-175em">Места для отдыха</h2>
+          <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
+          <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+        </div>
       </div>
     </section>
     <section id="booking" class="booking bg-c-f7 p-50 scmt-100px">
@@ -96,11 +98,11 @@
               <input class="booking-input br-5px" type="email" name="email">
             </label>
         </fieldset>
-        <button class="booking-btn b-none br-5px fw-bold c-turquoise">Отправить</button>
+        <button class="btn bc-turquoise as-flexstart b-none br-5px fw-bold c-turquoise">Отправить</button>
       </form>
     </section>
   </main>
-  <footer class="bgc-303846">
+  <footer class="bgc-darkspace">
     <div class="footer-container jc-spacebetween c-white w-1000 m-0-auto d-flex">
       <div>
         <p class="fw-bold"><img class="logo va-middle" src="images/logo.svg" alt="логотип ЖК «Лунное море»">Лунное море</p>

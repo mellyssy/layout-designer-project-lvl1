@@ -32,6 +32,10 @@ a:visited {
   color: #fff;
 }
 
+.c-white:visited {
+  color: #fff;
+}
+
 .fs-14px {
   font-size: 14px;
 }
@@ -62,6 +66,8 @@ a:visited {
 
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 20px 50px;
   background-color: #fff;
@@ -90,11 +96,18 @@ a:visited {
   text-decoration: none;
 }
 
+.mt-100px {
+  margin-top: 100px;
+}
+
+.mt-10px {
+  margin-top: 10px;
+}
+
 .hero-container {
   min-height: 400px;
-  padding-top: 120px;
   background-image: url(../images/banner.png);
-  background-position: center;
+  background-position: center 65%;
   background-size: cover;
 }
 
@@ -102,12 +115,15 @@ a:visited {
   height: 200px;
 }
 
-.hero-header {
+.mb-0 {
   margin-bottom: 0;
+}
+
+.fs-2em {
   font-size: 2em;
 }
 
-.hero-text {
+.m-5px00 {
   margin: 5px 0 0;
 }
 
@@ -198,12 +214,19 @@ a:visited {
   border: 1px solid #d8d8d8;
 }
 
-.booking-btn {
-  align-self: flex-start;
-  padding: 10px 25px;
+.btn {
+  padding: 10px 20px;
   font-size: 16px;
   line-height: 24px;
-  border: 1px solid #17d4ae;
+  border: 1px solid #fff;
+}
+
+.as-flexstart {
+  align-self: flex-start;
+}
+
+.bc-turquoise {
+  border-color: #17d4ae;
 }
 
 .mb-20 {
@@ -252,7 +275,7 @@ a:visited {
   border-bottom: 0;
 }
 
-.bgc-303846 {
+.bgc-darkspace {
   background-color: #303846;
 }
 
