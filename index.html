@@ -9,25 +9,30 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="body">
-  <header class="header fw-bold bs-borderbox">
-    <nav class="d-flex">
-      <a class="td-none ai-center"><img class="logo" src="images/logo.svg" alt="логотип ЖК «Лунное море»">Лунное море</a>
-      <ul class="ml-auto d-flex list-clear">
+  <header class="header fw-bold bs-borderbox d-flex">
+    <div class="td-none d-flex">
+      <img class="logo" src="images/logo.svg" alt="логотип ЖК «Лунное море»">
+      <p>Лунное море</p>
+    </div>
+    <nav class="ml-auto">
+      <ul class="d-flex list-clear">
         <li class="ml-20px"><a href="#advantages">Преимущества</a></li>
         <li class="ml-20px"><a href="#about">О ЖК</a></li>
         <li class="ml-20px"><a href="#places">Места для отдыха</a></li>
       </ul>
     </nav>
   </header>
-  <main class="mt-100px">
-    <section class="hero-container d-flex jc-center fd-column ai-center c-white p-20px">
-      <img class="h-200px" src="images/logo.svg" alt="логотип ЖК «Лунное море»">
-      <h1 class="mb-0 fs-2em">ЖК «Лунное море»</h1>
-      <p class="m-5px00">Место, откуда не хочется улетать</p>
-      <a class="btn mt-10px b-none c-pointer c-white fw-bold br-5px" href="#booking">Забронировать</a>
+  <main class="mt-header-height">
+    <section class="hero-container">
+      <div class=" jc-center fd-column ai-center c-white content-container">
+        <img class="h-200px" src="images/logo.svg" alt="логотип ЖК «Лунное море»">
+        <h1 class="mb-0 fs-2em">ЖК «Лунное море»</h1>
+        <p class="m-5px00">Место, откуда не хочется улетать</p>
+        <a class="btn mt-10px btn-white" href="#booking">Забронировать</a>
+      </div>
     </section>
-    <section class="p-50 scmt-100px" id="advantages">
-      <div class="jc-spacebetween m-0-auto w-1000 list-clear d-flex">
+    <section class="scmt-100px" id="advantages">
+      <div class="jc-spacebetween content-container">
         <div class="w-30percent">
           <h2 class="fs-175em">Уникальный вид</h2>
           <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
@@ -42,8 +47,8 @@
         </div>
       </div>
     </section>
-    <section class="p-50 bg-c-f7 scmt-100px" id="about">
-      <div class="jc-center w-1000 m-0-auto d-flex">
+    <section class="bg-c-f7 scmt-100px" id="about">
+      <div class="jc-center content-container">
         <div class="mw-520px mr-100">
           <h2 class="fs-175em">О ЖК «Лунное море»</h2>
           <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
@@ -53,7 +58,7 @@
       </div>
     </section>
     <section id="places" class="scmt-100px">
-      <div class="w-1000 m-0-auto d-flex p-50">
+      <div class="content-container">
         <img class="h-250px mr-100" src="images/moon-2.jpg" alt="Космонавт на Луне">
         <div class="places-text">
           <h2 class="fs-175em">Места для отдыха</h2>
@@ -62,48 +67,50 @@
         </div>
       </div>
     </section>
-    <section id="booking" class="booking bg-c-f7 p-50 scmt-100px">
-      <form class="w-450 d-flex fd-column ai-center m-0-auto"> 
+    <section id="booking" class="scmt-100px bg-c-f7">
+      <div class="content-container fd-column ai-center">
         <h2 class="fs-175em mb-30">Оставьте заявку сегодня!</h2>
-        <fieldset class="booking-fieldset mb-20 bs-borderbox p-20px">
-          <legend class="c-turquoise fw-bold fs-1p2em">Параметры квартиры</legend>
-          <label class="d-flex p-relative ai-center">
-            <span class="booking-label-text fw-bold">Количество комнат:</span> 
-            <select class="booking-input br-5px booking-select" name="rooms">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-            <span class="booking-arrow"></span>
-          </label>
-          <label class="d-flex p-relative ai-center">
-            <span class="booking-label-text fw-bold">Отделка:</span> 
-            <select class="booking-input br-5px booking-select" name="interior">
-              <option value="no-interior">Без отделки</option>
-              <option value="with-interior">С отделкой</option>
-              <option value="a-bit">Немного отделки</option>
-            </select>
-            <span class="booking-arrow"></span>
-          </label>
-        </fieldset>
-        <fieldset class="booking-fieldset mb-20 bs-borderbox p-20px">
-          <legend class="c-turquoise fw-bold fs-1p2em">Контактная информация</legend>
-            <label class="d-flex p-relative ai-center"><span class="booking-label-text fw-bold">Имя:</span>
-              <input class="booking-input br-5px" type="text" name="name">
+        <form class="w-450 d-flex ai-flexstart fd-column m-0-auto"> 
+          <fieldset class="booking-fieldset mb-20 bs-borderbox p-20px">
+            <legend class="c-turquoise fw-bold fs-1p2em">Параметры квартиры</legend>
+            <label class="d-flex p-relative ai-center">
+              <span class="booking-label-text fw-bold">Количество комнат:</span> 
+              <select class="booking-input br-5px booking-select" name="rooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <span class="booking-arrow"></span>
             </label>
-            <label class="d-flex p-relative ai-center"><span class="booking-label-text fw-bold">Телефон:</span>
-              <input class="booking-input br-5px" type="tel" name="phone">
-            </label> 
-            <label class="d-flex p-relative ai-center"><span class="booking-label-text fw-bold">E-mail:</span>
-              <input class="booking-input br-5px" type="email" name="email">
+            <label class="d-flex p-relative ai-center">
+              <span class="booking-label-text fw-bold">Отделка:</span> 
+              <select class="booking-input br-5px booking-select" name="interior">
+                <option value="no-interior">Без отделки</option>
+                <option value="with-interior">С отделкой</option>
+                <option value="a-bit">Немного отделки</option>
+              </select>
+              <span class="booking-arrow"></span>
             </label>
-        </fieldset>
-        <button class="btn bc-turquoise as-flexstart b-none br-5px fw-bold c-turquoise">Отправить</button>
-      </form>
+          </fieldset>
+          <fieldset class="booking-fieldset mb-20 bs-borderbox p-20px">
+            <legend class="c-turquoise fw-bold fs-1p2em">Контактная информация</legend>
+              <label class="d-flex p-relative ai-center"><span class="booking-label-text fw-bold">Имя:</span>
+                <input class="booking-input br-5px" type="text" name="name">
+              </label>
+              <label class="d-flex p-relative ai-center"><span class="booking-label-text fw-bold">Телефон:</span>
+                <input class="booking-input br-5px" type="tel" name="phone">
+              </label> 
+              <label class="d-flex p-relative ai-center"><span class="booking-label-text fw-bold">E-mail:</span>
+                <input class="booking-input br-5px" type="email" name="email">
+              </label>
+          </fieldset>
+          <button class="btn btn-turquoise">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="bgc-darkspace">
-    <div class="footer-container jc-spacebetween c-white w-1000 m-0-auto d-flex">
+    <div class="jc-spacebetween c-white content-container">
       <div>
         <p class="fw-bold"><img class="logo va-middle" src="images/logo.svg" alt="логотип ЖК «Лунное море»">Лунное море</p>
         <p class="fs-12px">&#169; 2032 год</p>
