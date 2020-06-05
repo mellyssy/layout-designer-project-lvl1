@@ -1,5 +1,9 @@
 :root {
   --header-height: 100px;
+  --dark: #303846;
+  --secondary: #fff;
+  --lightgray: #f7f7f7;
+  --formcolor: #17d4ae;
 }
 
 .body {
@@ -7,12 +11,12 @@
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5em;
-  color: #303846;
+  color: var(--dark);
 }
 
 a,
 a:visited {
-  color: #303846;
+  color: var(--dark);
   text-decoration: none;
 }
 
@@ -32,16 +36,9 @@ a:visited {
   font-size: 12px;
 }
 
-.c-white {
-  color: #fff;
-}
-
-.btn-white {
-  color: #fff;
-}
-
-.btn-white:visited {
-  color: #fff;
+.secondary, 
+.btn-secondary:visited {
+  color: var(--secondary);
 }
 
 .fs-14px {
@@ -60,17 +57,14 @@ a:visited {
   padding: 20px;
 }
 
-.br-5px {
-  border-radius: 5px;
-}
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   width: 100%;
   padding: 20px 50px;
-  background-color: #fff;
+  background-color: var(--secondary);
   height: var(--header-height);
 }
 
@@ -87,9 +81,11 @@ a:visited {
   margin-left: 20px;
 }
 
-.logo {
+.h-50px {
   height: 50px;
-  vertical-align: middle;
+}
+
+.mr-10px {
   margin-right: 10px;
 }
 
@@ -139,20 +135,16 @@ a:visited {
   padding: 50px;
 }
 
-.m-0-auto {
-  margin: 0 auto;
-}
-
 .mr-100 {
   margin-right: 100px;
 }
 
-.fs-175em {
+h2 {
   font-size: 1.75em;
 }
 
-.bg-c-f7 {
-  background-color: #f7f7f7;
+.bg-lightgray {
+  background-color: var(--lightgray);
 }
 
 .jc-spacebetween {
@@ -179,8 +171,8 @@ a:visited {
   max-width: 520px;
 }
 
-.c-turquoise {
-  color: #17d4ae;
+.formcolor {
+  color: var(--formcolor);
 }
 
 .bs-borderbox {
@@ -189,7 +181,7 @@ a:visited {
 
 .booking-fieldset {
   width: 100%;
-  border: 2px groove #17d4ae;
+  border: 2px groove var(--formcolor);
   margin: 0;
 }
 
@@ -202,6 +194,7 @@ a:visited {
   height: 15px;
   padding: 5px;
   border: 1px solid #d8d8d8;
+  border-radius: 5px;
 }
 
 .btn {
@@ -209,15 +202,16 @@ a:visited {
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
-  border: 1px solid #fff;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
   cursor: pointer;
   background: none;
   border-radius: 5px;
 }
 
 .btn-turquoise {
-  border-color: #17d4ae;
-  color: #17d4ae;
+  border-color: var(--formcolor);
+  color: var(--formcolor);
 }
 
 .mb-20 {
@@ -270,8 +264,8 @@ a:visited {
   border-bottom: 0;
 }
 
-.bgc-darkspace {
-  background-color: #303846;
+.bgdark {
+  background-color: var(--dark);
 }
 
 .va-middle {
